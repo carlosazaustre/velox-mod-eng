@@ -17,11 +17,17 @@
       </div>
 
       <div class="post-cover site_width site_width padding">
+
         <h1>{{{title}}}</h1>
         <time datetime="{{date format='YYYY-MM-DD'}}">
           <span class="fa fa-calendar-o"></span>
           {{date format="dddd, MMMM DD, YYYY"}}
         </time>
+
+        <div style="display: none;">
+          <img id="feature-image" src="{{image}}" />
+        </div>
+
       </div>
     </div>
   </div>

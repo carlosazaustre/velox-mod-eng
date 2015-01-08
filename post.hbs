@@ -55,9 +55,22 @@
     <div class="entry margin_bottom">
       {{content}}
     </div>
-
+    <hr/>
+    <div id="newsletter" class="box" data-column="12">
+      <form action="//carlosazaustre.us6.list-manage.com/subscribe/post?u=f03c243e4abc9f550757789bc&amp;id=bde03e7057" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <h5>No te pierdas ningún tutorial</h5>
+        <p>Si quieres recibir en tu email antes que nadie las noticias que se cuecen en este blog, sólo tienes que dejar tu dirección de correo electrónico.</p>
+        <input type="email" name="EMAIL" class="inline field" id="mce-EMAIL" placeholder="Tu dirección de email..." required>
+        <p class="center">
+          <input type="submit" class="btn medium bck orange border radius" value="Quiero suscribirme" name="subscribe" id="mc-embedded-subscribe">
+        </p>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_f03c243e4abc9f550757789bc_bde03e7057" tabindex="-1" value=""></div>
+      </form>
+    </div>
+    <hr/>
     <section class="share">
-      <h5>Comparte este artículo</h5>
+      <h5>Si te ha gustado éste artículo, por favor compártelo para que otros puedan leerlo</h5>
       <a class="fa-stack fa-lg"
          href="https://twitter.com/share?text={{encode title}}&nbsp;by&nbsp;@carlosazaustre&amp;url={{url absolute="true"}}"
          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
@@ -78,16 +91,16 @@
       </a>
     </section>
 
+    <hr>
     <footer class="author-post relative margin_top">
       {{#if author}}
-      <h5>Autor</h5>
+      <h5>¿Quién escribe esto?<br></h5>
 
       {{#if author.image}}
       <div class="author-thumb inline middle">
         <img src="{{author.image}}" alt="Author image" class="border circle" />
       </div>
       {{/if}}
-
       <div class="inline middle align vertical">
         <div>{{author}}</div>
         <div>{{author.bio}}</div>

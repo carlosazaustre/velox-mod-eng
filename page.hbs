@@ -1,29 +1,15 @@
-{{< default}}
+{{!< default}}
 
-<header>
-  {{#post}}
-  <div class="cover" style="background-image: url({{image}})">
-    <div class="cover-mask">
-      <div class="blog-info">
-        <div class="author">
-          {{#if author.image}}<img src="{{author.image}}" alt="Author image" class="border circle inline" />{{/if}}
-          <div class="inline">{{author}}</div>
-        </div>
-
-        <div class="title"><a class="text bold" href="{{@blog.url}}">{{@blog.title}}</a></div>
-      </div>
-
-    </div>
-  </div>
-  {{/post}}
-</header>
-
-{{/if}}
+{{> "header"}}
 
 <main class="site_width padding" role="main">
   <article class="{{post_class}}">
 
     {{#post}}
+
+    <header class="post-header">
+      <h1>{{{title}}}</h1>
+    </header>
 
     <div class="entry">
       {{content}}
@@ -32,9 +18,9 @@
     {{/post}}
 
     {{!
-      Here, you can add disqus comment.
-      Also go to partials/disqus-comment to set your SHORTNAME.
-    }}
-    {{!> disqus-comment}}
-  </article>
+    Here, you can add disqus comment.
+    Also go to partials/disqus-comment to set your SHORTNAME.
+  }}
+  {{!> disqus-comment}}
+</article>
 </main>

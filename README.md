@@ -1,4 +1,6 @@
-# Velox
+# Velox-Mod
+
+Fork of [Velox](https://github.com/dreyacosta/velox), Ghost theme by [David Rey Acosta](http://dreyacosta.com)
 
 Responsive and minimal theme for Ghost focus on speed, typography and semantic.
 

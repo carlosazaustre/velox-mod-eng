@@ -2,14 +2,25 @@
 
 {{> "header"}}
 
-<main class="site_width row" role="main">
+<main class="site_width" style="display: table; box-sizing:border-box;" role="main">
 
-  <div class="col6">
+  <div style="width:65%; display: table-cell; vertical-align:middle;">
     {{> "loop"}}
   </div>
 
-  <div class="col3">
-    Hola
+  <div style="width:30%; display:table-cell;">
+    <div class="padding" style="margin-top: 2em; background: #eaeaea;">
+      <figure>
+        <a href="http://h4ckademy.com">
+          <img src="http://blog.h4ckademy.com/content/images/2015/01/logo384-new-2.png" alt="H4ckademy" />
+        </a>
+      </figure>
+      <h4 style="text-align:center;">H4ckademy</h4>
+      <p style="text-align:center;">6 weeks of immersive code retreat in Madrid</p>
+      <strong>
+        <a style="display:block; text-align:center;" class="btn bck green" href="http://www.h4ckademy.com/?ref=carlosazaustre">Apply!</a>
+      </strong>
+    </div>
   </div>
 
 </main>

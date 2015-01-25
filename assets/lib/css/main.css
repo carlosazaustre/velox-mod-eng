@@ -565,24 +565,25 @@ cursor: move;
 cursor: pointer;
 }
 .cursor.progress {
-cursor: progress;
+  cursor: progress;
 }
 .border {
-border-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(240, 240, 240, 0.8);
 }
 .border.radius {
--webkit-border-radius: .4rem;
--moz-border-radius: .4rem;
--ms-border-radius: .4rem;
--o-border-radius: .4rem;
-border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
+  border-radius: .4rem;
 }
 .border.circle {
--webkit-border-radius: 50%;
--moz-border-radius: 50%;
--ms-border-radius: 50%;
--o-border-radius: 50%;
-border-radius: 50%}
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
 .border.top {
   border-top-width: .1rem;
 }
@@ -836,9 +837,9 @@ cite {
   font-weight: 100;
 }
 .blog-info .author img {
-  border: 0;
+  border: 2px solid #eaeaea;
   margin-right: 10px;
-  width: 30px;
+  width: 32px;
 }
 .blog-info .title {
   right: 26px;
@@ -903,6 +904,7 @@ cite {
 }
 .author img {
   max-width: 40px;
+  border: 1px solid #eaeaea;
 }
 .author time {
   display: block;
@@ -1077,7 +1079,14 @@ pre[class*="language-"] {
   .ad-media {
     width: 10%;
   }
+  .ad-description {
+    width: 80%;
+  }
 }
 .btn-green {
   background-color: #690;
+}
+.btn-orange {
+  background-color: #e90;
+  font-weight: bold;
 }

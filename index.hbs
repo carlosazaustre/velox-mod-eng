@@ -4,23 +4,20 @@
 
 <main class="site_width" style="display: table; box-sizing:border-box;" role="main">
 
-  <div style="width:65%; display: table-cell; vertical-align:middle;">
-    {{> "loop"}}
-  </div>
-
-  <div class="desktop" style="width:30%; display:table-cell;">
-    <div class="padding" style="margin-top: 2em; background: #eaeaea;">
-      <figure>
-        <a href="http://h4ckademy.com/?ref=carlosazaustre">
-          <img src="http://blog.h4ckademy.com/content/images/2015/01/logo384-new-2.png" alt="H4ckademy" />
-        </a>
-      </figure>
-      <h4 style="text-align:center;">H4ckademy</h4>
-      <p style="text-align:center;">6 weeks of immersive code retreat in Madrid</p>
-      <strong>
-        <a style="display:block; text-align:center;" class="btn bck green" href="http://www.h4ckademy.com/?ref=carlosazaustre">Apply!</a>
-      </strong>
+  <div class="row padding ad">
+    <figure class="ad-media">
+      <a href="http://h4ckademy.com/?ref=carlosazaustre">
+        <img src="http://blog.h4ckademy.com/content/images/2015/01/logo384-new-2.png" alt="H4ckademy" />
+      </a>
+    </figure>
+    <div class="ad-description">
+      <h4><a href="http://h4ckademy.com/?ref=carlosazaustre">H4ckademy</a></h4>
+      <small>
+        6 weeks of immersive code retreat in Madrid. <span class="desktop">Kick-off on February 16th 2015</span>
+      </small>
     </div>
   </div>
+
+  {{> "loop"}}
 
 </main>

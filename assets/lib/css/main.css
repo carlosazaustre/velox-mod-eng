@@ -882,11 +882,11 @@ cite {
   margin: 0 auto;
 }
 .entry a {
-  color: #269acd;
+  color: #da5715;
   text-decoration: underline;
 }
 .entry a:hover {
-  color: #0b7dae;
+  color: #cc3c00;
   text-decoration: underline;
 }
 .excerpt h4 {
@@ -933,7 +933,8 @@ cite {
   font-family: 'Raleway'
 }
 .site-footer {
-  background: #f8f8f8;
+  background: linear-gradient(#da5715,#ec7539),#da5715;
+  color: rgba(255,255,255,0.65);
   font-family: 'Raleway';
   font-weight: 300;
 }
@@ -1088,6 +1089,7 @@ pre[class*="language-"] {
   background-color: #690;
 }
 .btn-orange {
-  background-color: #e90;
+  background-color: #ec7539;
+  color: rgba(255,255,255, 0.75);
   font-weight: bold;
 }

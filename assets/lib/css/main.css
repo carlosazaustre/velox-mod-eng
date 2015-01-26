@@ -1075,6 +1075,7 @@ pre[class*="language-"] {
   display: inline-block;
   margin: 0 0 0 .5em;
 }
+
 @media screen and (min-width: 720px) {
   .ad-media {
     width: 10%;

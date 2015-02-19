@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>Carlos Azaustre | Web Developer Blog</title>
+    <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
@@ -11,9 +11,43 @@
     <link rel="author" href="//plus.google.com/+CarlosAzaustre?rel=author" />
     <link rel="shortcut icon" href="{{ asset "favicon.ico"}}">
     <link rel="stylesheet" href="{{ asset "lib/css/main.css"}}">
+    {{#if post}}
     {{ghost_head}}
+    {{else}}
+    <meta property="og:locale" content="es">
+    <meta property="og:site_name" content="Carlos Azaustre | Web Developer Blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:title" content="Cómo conectarte remótamente a tu base de datos MongoDB" />
+    <meta property="og:description" content="{{meta_description}}" />
+    <meta property="og:url" content="http://carlosazaustre.es/blog" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="{{meta_description}}" />
+    <meta name="twitter:url" content="http://carlosazaustre.es" />
+    <meta name="twitter:image:src" content="" />
+    {{/if}}
+
+
   </head>
   <body>
+
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div class="blog-info">
+          <div class="author title">
+            <img src="{{@blog.logo}}" alt="Author image" class="border circle inline" />
+            <a class="text bold" href="{{@blog.url}}">{{@blog.title}}</a>
+          </div>
+          <ul>
+            <li><a href="http://carlosazaustre.es/blog/sobre-mi/">Sobre mí</a></li>
+            <li><a href="http://carlosazaustre.es/blog/curriculum/">Currículum</a></li>
+            <li><a href="http://carlosazaustre.es/blog/ebook-angular/">eBooks</a></li>
+            <li><a href="http://www.redbubble.com/people/carlos-azaustre/shop">Camisetas Geeks</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     {{{body}}}
 

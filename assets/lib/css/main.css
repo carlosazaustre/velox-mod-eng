@@ -265,9 +265,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 input:focus, textarea:focus {
   border-color: rgba(0, 0, 0, 0.3);
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-width: 1px;
+  border-width: 2px;
   -webkit-transition: border-color 600ms;
   -moz-transition: border-color 600ms;
   -ms-transition: border-color 600ms;
@@ -1100,9 +1098,33 @@ pre[class*="language-"] {
 
 #newsletter form {
   background-color: #eaeaea;
-  border: 1px solid #ccc;
   padding: 1em;
   text-align: center;
+}
+
+.navbar {
+  background: #222;
+  height: 50px;
+}
+
+.navbar-content {
+  color: #eaeaea;
+}
+
+.navbar-content .blog-info ul {
+  list-style-type: none;
+  display: inline-block;
+  line-height: 45px;
+  float: right;
+  position: relative;
+  z-index: 10;
+}
+.navbar-content .blog-info li {
+  display: inline-block;
+}
+
+.navbar-content .blog-info a:hover {
+  text-decoration: underline;
 }
 
 hr {

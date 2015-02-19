@@ -1085,6 +1085,9 @@ pre[class*="language-"] {
     width: 80%;
   }
 }
+
+/* New Modules */
+
 .btn-green {
   background-color: #690;
 }
@@ -1092,4 +1095,11 @@ pre[class*="language-"] {
   background-color: #ec7539;
   color: rgba(255,255,255, 0.75);
   font-weight: bold;
+}
+
+.newsletter form {
+  background-color: #eaeaea;
+  border: 1px solid #ccc; 
+  padding: 1em;
+  text-align:center;
 }

@@ -1161,6 +1161,15 @@ pre[class*="language-"] {
 
 .footer-column {
   width: 30%;
+  border-right: 1px solid #ddd;
+}
+
+.footer-column:last-child {
+  border-right: 0
+}
+
+.footer-column ul {
+  list-style-type: none;
 }
 
 hr {

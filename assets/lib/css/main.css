@@ -1150,6 +1150,19 @@ pre[class*="language-"] {
   text-decoration: none;
 }
 
+.footer {
+  font-family: 'Lato';
+  color: #ddd;
+  background: #222;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.footer-column {
+  width: 30%;
+}
+
 hr {
   border: 1px solid #eaeaea;
   margin: 0;

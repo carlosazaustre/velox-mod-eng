@@ -1152,16 +1152,24 @@ pre[class*="language-"] {
 
 .footer {
   font-family: 'Lato';
-  color: #ddd;
+  color: #ccc;
   background: #222;
+  display: -webkit-box;
+  display: -moz-fox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
 }
 
+.footer a {
+  font-weight: bold;
+}
+
 .footer-column {
-  width: 30%;
-  border-right: 1px solid #ddd;
+  width: 33%;
+  border-right: 1px solid #555;
 }
 
 .footer-column:last-child {
@@ -1170,6 +1178,18 @@ pre[class*="language-"] {
 
 .footer-column ul {
   list-style-type: none;
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    border: 0;
+  }
 }
 
 hr {
@@ -1181,4 +1201,9 @@ hr {
   color: #ec7539;
   text-transform: uppercase;
   font-size: .7em;
+}
+
+.text-small {
+  font-size: .8em;
+  line-height: 1.5em;
 }

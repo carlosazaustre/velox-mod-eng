@@ -34,7 +34,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 header {
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
 nav ul {
   list-style: none;
@@ -843,6 +843,7 @@ cite {
 .blog-info .title {
   right: 26px;
 }
+
 .cover {
   background-size: cover;
   background-position: center;
@@ -850,6 +851,7 @@ cite {
 .cover-mask {
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
+  padding-top: 3em;
 }
 .cover-mask img {
   border: 3px solid rgba(255, 255, 255, 0.7);
@@ -1206,4 +1208,20 @@ hr {
 .text-small {
   font-size: .8em;
   line-height: 1.5em;
+}
+
+/* Navbar Header Responsive */
+@media screen and (max-width: 767px) {
+  .blog-info ul {
+    position: absolute !important;
+    top: 44px;
+    left: 0;
+    background: #333;
+    font-size: 8pt !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .blog-info .author a {
+    font-size: 10pt;
+  }
 }

@@ -5,8 +5,9 @@
     <div class="cover-mask padding">
       {{#if @blog.logo}}
       <nav>
-        <a href="{{@blog.url}}" class="inline blog-logo-extra-border border circle">
-          <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo center border circle" />
+        <a href="{{@blog.url}}" class="inline">
+          <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo blog-logo--front center border circle" />
+          <img src="{{ asset "jslogo.jpg" }}" alt="{{@blog.title}}" class="blog-logo blog-logo--back center border circle" />
         </a>
       </nav>
       {{/if}}
@@ -33,10 +34,10 @@
   </div>
 
   <div class="margin-top">
-    <a href="http://carlosazaustre.es/blog/sobre-mi/">Sobre mí</a> |
-    <a href="http://carlosazaustre.es/blog/curriculum/">Currículum</a> |
-    <a href="http://carlosazaustre.es/blog/ebook-angular/">eBooks</a> |
-    <a href="http://www.redbubble.com/people/carlos-azaustre/shop">Camisetas Geeks</a>
+    <a href="//carlosazaustre.com/blog/about-me/">About Me</a> |
+    <a href="//carlosazaustre.com/blog/resume/">Résúmé</a> |
+    <!--<a href="//carlosazaustre.com/blog/ebook-angular/">eBooks</a> | -->
+    <a href="//www.redbubble.com/people/carlos-azaustre/shop">Shop</a>
   </div>
 </div>
 
